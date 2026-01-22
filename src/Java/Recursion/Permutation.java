@@ -7,8 +7,7 @@ public class Permutation {
         } else {
             for(int i = 0; i < str.length(); ++i) {
                 char ch = str.charAt(i);
-                String var10000 = str.substring(0, i);
-                String ros = var10000 + str.substring(i + 1);
+                String ros = str.substring(0, i) + str.substring(i + 1);
                 perm(ros, ans + ch);
             }
 
